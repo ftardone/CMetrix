@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageIconUrl>http://www.cmetrix.la/wp-content/uploads/2015/04/favicon.png</PackageIconUrl>
+    <Copyright>CMetrix</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="dll\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CRM2016.SDK.Plug-inAssemblies" Version="1.0.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.1" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Xrm.Client">
+      <HintPath>dll\Microsoft.Xrm.Client.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
